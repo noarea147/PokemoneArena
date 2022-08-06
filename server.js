@@ -1,6 +1,6 @@
 const app = require("./app");
 
-const server = app.listen(process.env.PORT_CLIENT || 3000, () => {
+const server = app.listen(process.env.PORT_CLIENT || 3000, "0.0.0.0", () => {
   const port = server.address().port;
   console.log(`Client Server started on port ${port}`);
 });
