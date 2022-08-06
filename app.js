@@ -26,7 +26,7 @@ const getAllTypes = (pokemons) => {
 const isWinner = (types, weaknesses) => {
   let res = false;
   types.map((type) => {
-    res = weaknesses.includes(type);
+    weaknesses.includes(type) && (res = true);
   });
   return res;
 };
