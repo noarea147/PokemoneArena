@@ -7,6 +7,7 @@ PORT_CLIENT=8000
 # PokemoneArena
 
 [GET] /  -> returns list of pokemon names
+[GET] /alltypes  -> returns list of pokemon types
 [GET] /?pokemonName -> returns image, element type, spawn chance
 [GET] /weak/?typeName -> returns all pokemons that are weak to those element type
 [GET] /strong/?typeName -> returns all pokemons that are strong to those element type
